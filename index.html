@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jun HOME</title>
+<link href="./css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<link href="./css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- Custom Theme files -->
+<script src="./js/jquery.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+<link rel='icon' href='./images/logo.png' type=‘image/x-ico’ /> 
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="./layer/layer.js"></script>   
+   <script type="text/javascript" src="./js/move-top.js"></script>
+<script type="text/javascript" src="./js/easing.js"></script>
+
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+				});
+				$("#logo").on("click",function(){
+					layer.alert("努力完善中...");
+				 });
+			});
+		</script>
+		<script>
+		 $("span.menu").click(function(){
+			$(".top-menu ul").slideToggle("slow" , function(){
+			});
+		 });
+		 
+		 
+		  var index=0;
+   function show(){
+	   $("span:eq("+index+")").attr("style",style);
+	  	$("span:not(:eq("+index+"))").attr("style","");
+	   if(index==7){
+		   index=0;
+	   }else{
+		   index++;
+	   }
+	}
+	setInterval(show,1000);
+	
+	 var style="text-shadow: 0px 0px 2px #686868,0px 1px 1px #fff, 0px 2px 1px #fff,0px 3px 1px #fff,0px 4px 1px #fff,0px 5px 1px #fff,"+
+	    "0px 6px 1px #fff, 0px 7px 1px #777, 0px 8px 3px #fff, 0px 9px 5px #fff, 0px 10px 7px #fff, 0px 11px 9px #fff, 0px 12px 11px #fff,0px 13px 15px #fff;"
+		 </script>
+</head>
+<body>
+<audio id="bgMusic" src="./mp3/right.mp3" autoplay="autoplay" loop="loop"></audio>
+ <!-- header-section-starts -->
+   <div class="header">
+  <div class="header-banner" style="margin-bottom:0px;">
+    <div class="container" >
+      <div class="top-menu"> <span class="menu"> </span>
+          <ul>			
+            <li style="float:left;margin-left:25%;" id="home"><a href="javascript:void(0)">HOME</a></li>
+            <li  style="float:right;margin-right:25%;"><a href="page_1.html">ABOUT</a></li>
+            <div class="clearfix"></div>
+          </ul>
+      </div>
+      <!--script-nav-->
+      <div class="header-banner-info text-center"style=' red;height:80%;padding-top:0px;'> <a href="#"><img src="./images/logo.png" title="呀哟" id="logo"/></a>
+          <h3>HELLO</h3>
+        <h1 style="height:200px;">
+          <div class="demo"style="height:300px;margin-top:-50px;">
+              <p><span>W</span><span>e</span><span>l</span><span>c</span><span>o</span><span>m</span><span>e</span></p>
+          </div>
+        </h1>
+        <p style="margin-top:-50px;">旧城一别，散而散矣，目光里的温暖早已恍如隔世……</p>
+        <!--<ul class="details">
+						<li>Age     :     <a href="#">23</a></li>
+						<li>Country     :     <a href="#">TURKEY</a></li>
+						<li>Working at     :     <a href="#">FREELANCE</a></li>
+					</ul>-->
+      </div>
+    </div>
+  </div>
+
+</div>
+  <div class="footer">
+	    <div class="container">
+			<div class="copy-rights text-center">
+				<p>&copy; 2016  <a href="javascript:void(0)" target="target_blank"></a></p>
+			</div>
+		</div>
+	</div>
+	<!-- footer-section-ends -->
+				  <script type="text/javascript">
+						$(document).ready(function() {
+							/*
+							var defaults = {
+					  			containerID: 'toTop', // fading element id
+								containerHoverID: 'toTopHover', // fading element hover id
+								scrollSpeed: 1000,
+								easingType: 'linear' 
+					 		};
+							*/
+							
+							$().UItoTop({ easingType: 'easeOutQuart' });
+							
+						});
+					</script>
+				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+</body>
+</html>
